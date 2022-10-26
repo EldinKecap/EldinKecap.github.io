@@ -1,0 +1,18 @@
+input{
+    margin:0px  20px !important;
+}
+
+.container{
+    padding: 20px;
+    border-radius: 15px ;
+    margin: 10px !important;
+}
+
+#error{
+    margin: 20px ;
+}
+
+.red-placeholder-text{
+    border-bottom:solid red 1px !important;
+}
+
