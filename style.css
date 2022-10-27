@@ -8,8 +8,16 @@ input::placeholder{
 
 .container{
     padding: 20px;
-    border-radius: 3px ;
-    margin: 10px !important;
+    border-radius: 4px ;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn-small{
+    margin-bottom: 10px;
 }
 
 #error{
@@ -46,4 +54,25 @@ a{
     margin-right: 5px;
 }
 
+.card-content{
+    word-wrap: break-word;
+}
 
+.modal-content h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content h1::after{
+    content: '';
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    background-color: red;
+    width: 10%;
+    height: 3px;
+}
+
+#searchbarWrapper{
+    justify-content: center;
+}
