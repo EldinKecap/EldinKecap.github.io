@@ -2,9 +2,13 @@ input{
     margin:0px  20px !important;
 }
 
+input::placeholder{
+    color: gray;
+}
+
 .container{
     padding: 20px;
-    border-radius: 15px ;
+    border-radius: 3px ;
     margin: 10px !important;
 }
 
@@ -15,4 +19,31 @@ input{
 .red-placeholder-text{
     border-bottom:solid red 1px !important;
 }
+
+h1{
+    font-size: 30px;
+    margin: 0px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+#channelContainer{
+    cursor: default;
+}
+
+#statistics{
+    margin:  2% ;
+    padding: 0px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: black;
+    background-color: lightgray;
+}
+
+#channelContainer .btn-small{
+    margin-right: 5px;
+}
+
 

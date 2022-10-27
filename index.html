@@ -5,22 +5,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="./style.css">
         <script defer src="./main.js"></script>
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <title>YouTube Search engine</title>
+        <link rel="icon" href="./images/youTubeIcon.png">
+        <title>YouTube Channel Search</title>
+        
       </head>
-      <body class="grey darken-3">
-        <h2 class="grey darken-2 center-align white-text card-panel">YouTube Search Engine</h2>
-        <div class="row">
-          <input type="text" class="col s4" placeholder="Enter the name of a Channel" id="searchbar" >
-          <button class="btn red hoverable" id="search">Search</button>
+      <body class="grey lighten-2">
+        <div class="row black card-panel">
+          <h1 class="col s6 center-align white-text valign-wrapper"><img src="./images/youTubeIcon.png" > YouTube Search</h1> 
+        </div>
+        <div class="row valign-wrapper">
+          <input type="text" class="col s4" placeholder="Enter the name of a Channel" id="searchbar">
+          <button class="btn-large waves-effect waves-light red hoverable" id="search">Search <i class="material-icons right">search</i></button>
         </div>
         <div id="error" class="grey-text lighten-2"></div>
         <div id="results"></div>
+        <!--  -->         
+          <!-- <a href="#videoResults" class="modal-trigger btn"> show</a> -->
+          <div class="modal" id="videoResults">
+            <div class="modal-content">
+              <h1>Video results</h1>
+            </div>
+            <div class="modal-footer">
+              <!-- <a href="" class="modal-close btn">Close</a> -->
+            </div>
+          </div>
+          <!-- Card -->
+          <!-- <div class="row">
+            <div class="col s12 l6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.ytimg.com/vi/KZdQjDipyGk/hqdefault.jpg" >
+                </div>
+                <div class="card-content">
+                  <span class="card-title">yo</span>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nam eligendi cumque distinctio ipsam officia maxime incidunt ipsum voluptas. Dolor rem adipisci fuga laudantium corrupti eaque a dolorum, beatae necessitatibus.</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- Card -->
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('.modal').modal()
+          });
+        </script>
+
         <!-- Implementirati autentifikaciju -->
         <!-- <script defer src="./youtube_api_sign_in.js"></script> -->
         <!-- <button onclick="authenticate().then(loadClient)">authorize and load</button> -->
