@@ -15,49 +15,50 @@
         
       </head>
       <body class="grey lighten-2">
-        <div class="row black card-panel">
-          <h1 class="col s6 center-align white-text valign-wrapper"><img src="./images/youTubeIcon.png" > YouTube Search</h1> 
+        <div class="row black card-panel valign-wrapper">
+      <h1 class="col s6 center-align white-text valign-wrapper"><img src="./images/youTubeIcon.png" > YouTube Search</h1> 
+      <div id="root" class="col s6 right right-align"></div>
+    </div>
+    <div class="row valign-wrapper center-align" id="searchbarWrapper" >
+      <input type="text" class="col s4" placeholder="Enter channel name"  id="searchbar">
+      <button class="btn-large waves-effect waves-light red hoverable"  id="search">Search <i class="material-icons right">search</i></button>
+    </div>
+    <div id="error" class="grey-text lighten-2"></div>
+    <div id="results"></div>
+    <!--  -->         
+      <!-- <a href="#videoResults" class="modal-trigger btn"> show</a> -->
+      <div class="modal" id="videoResults">
+        <div class="modal-content">
+          <h1>Video Results</h1>
         </div>
-        <div class="row valign-wrapper center-align" id="searchbarWrapper">
-          <input type="text" class="col s4" placeholder="Enter channel name" id="searchbar">
-          <button class="btn-large waves-effect waves-light red hoverable" id="search">Search <i class="material-icons right">search</i></button>
+        <div class="modal-footer">
+          <!-- <a href="" class="modal-close btn">Close</a> -->
         </div>
-        <div id="error" class="grey-text lighten-2"></div>
-        <div id="results"></div>
-        <!--  -->         
-          <!-- <a href="#videoResults" class="modal-trigger btn"> show</a> -->
-          <div class="modal" id="videoResults">
-            <div class="modal-content">
-              <h1>Video Results</h1>
+      </div>
+      <!-- Card -->
+      <!-- <div class="row">
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.ytimg.com/vi/KZdQjDipyGk/hqdefault.jpg" >
             </div>
-            <div class="modal-footer">
-              <!-- <a href="" class="modal-close btn">Close</a> -->
+            <div class="card-content">
+              <span class="card-title">yo</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nam eligendi cumque distinctio ipsam officia maxime incidunt ipsum voluptas. Dolor rem adipisci fuga laudantium corrupti eaque a dolorum, beatae necessitatibus.</p>
             </div>
           </div>
-          <!-- Card -->
-          <!-- <div class="row">
-            <div class="col s12 l6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="https://i.ytimg.com/vi/KZdQjDipyGk/hqdefault.jpg" >
-                </div>
-                <div class="card-content">
-                  <span class="card-title">yo</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nam eligendi cumque distinctio ipsam officia maxime incidunt ipsum voluptas. Dolor rem adipisci fuga laudantium corrupti eaque a dolorum, beatae necessitatibus.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- Card -->
-          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-          
-          <!-- Compiled and minified JavaScript -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
-          $(document).ready(function () {
-            $('.modal').modal()
-          });
-        </script>
+        </div>
+      </div> -->
+      <!-- Card -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.modal').modal()
+      });
+    </script>
 
         <!-- Implementirati autentifikaciju -->
         <!-- <script defer src="./youtube_api_sign_in.js"></script> -->
