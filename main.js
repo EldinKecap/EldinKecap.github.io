@@ -65,7 +65,8 @@ function generateChannelCard(item) {
   let description = document.createElement('p');
   // let statistics = createStatisticsElement(item);
   let showVideosButton = document.createElement('a');
-  link.setAttribute('href', 'https://youtube.com/channel/' + item.id);
+  console.log(item);
+  link.setAttribute('href', 'https://youtube.com/channel/' + item.id.channelId);
   link.setAttribute('target', '_blank');
   container.id = 'channelContainer';
   container.className = 'container';
@@ -96,21 +97,6 @@ function generateChannelCard(item) {
   return container;
 }
 
-// function createStatisticsElement(item){
-//     let statistics = document.createElement('div');
-//     let viewCount = document.createElement('p');
-//     let subscriberCount = document.createElement('p');
-//     let videoCount = document.createElement('p');
-//     statistics.classList.add('right');
-//     statistics.id = 'statistics';
-//     viewCount.innerHTML = `${item.statistics.viewCount} Views`;
-//     subscriberCount.innerHTML = `${item.statistics.subscriberCount} Subscribers`;
-//     videoCount.innerHTML = `${item.statistics.videoCount} Videos`;
-//     statistics.appendChild(viewCount);
-//     statistics.appendChild(subscriberCount);
-//     statistics.appendChild(videoCount);
-//     return statistics
-// }
 
 async function fetchVideos(id, pageToken = 0) {
   let response;
